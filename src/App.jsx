@@ -15,7 +15,7 @@ function App(){
 
   const [submittedData, setSubmittedData] = useState(null)
 
-  // Single handleChange function
+ 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
 
@@ -44,7 +44,7 @@ function App(){
          hobbies:[], 
          course:"",
           address:"",
-           fees:"" }) // clear form
+           fees:"" })
   }
 
   return (
@@ -52,7 +52,7 @@ function App(){
       <form onSubmit={handleSubmit} className="w-100">
         <h2 className="text-center text-dark mb-4">Student Registration Form</h2>
 
-        {/* Name */}
+       
         <div className="mt-4">
           <input 
             type="text" 
@@ -64,7 +64,7 @@ function App(){
           />
         </div>
 
-        {/* Email */}
+        
         <div className="mt-4">
           <input 
             type="text" 
@@ -76,7 +76,7 @@ function App(){
           />
         </div>
 
-        {/* Gender */}
+       
         <div className="mt-4 ">
           <label className="me-3">Gender:</label>
 
@@ -107,7 +107,7 @@ function App(){
           </div>
         </div>
 
-        {/* Hobbies */}
+      
         <div className="mt-4">
           <label className="me-3">Hobbies:</label>
 
@@ -129,7 +129,7 @@ function App(){
           ))}
         </div>
 
-        {/* Course */}
+       
         <div className="mt-4">
           <select 
             className="form-select"
@@ -144,7 +144,7 @@ function App(){
           </select>
         </div>
 
-        {/* Address */}
+      
         <div className="mt-4">
           <textarea 
             className="form-control" 
@@ -155,7 +155,7 @@ function App(){
           />
         </div>
 
-        {/* Fees */}
+        
         <div className="mt-4">
           <input 
             type="number" 
@@ -172,7 +172,7 @@ function App(){
         </div>
       </form>
 
-      {/* Show submitted data in table */}
+   
       {submittedData && (
         <div className="mt-5">
           <h4 className="mb-3 text-center">📋 Submitted Data</h4>
