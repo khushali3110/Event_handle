@@ -156,16 +156,21 @@ function App(){
         </div>
 
         
-        <div className="mt-4">
-          <input 
-            type="number" 
-            className="form-control" 
-            placeholder="Enter fees"
-            name="fees"
-            value={formData.fees}
-            onChange={handleChange}
-          />
-        </div>
+      <div className="mt-4">
+  <input 
+    type="number" 
+    className="form-control" 
+    placeholder="Enter Fees"
+    name="fees"
+    value={formData.fees}
+    onChange={(e) => 
+      setFormData({ ...formData, [e.target.name]: Number(e.target.value) })
+    }
+  />
+</div>
+
+
+
 
         <div className="mt-4 text-center">
           <button className="btn btn-dark px-4" type="submit">Submit</button>
